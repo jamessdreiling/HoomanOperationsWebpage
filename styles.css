@@ -163,6 +163,8 @@ input, textarea {
   color: var(--slate-blue);
 }
 
+.footer-lockup { display: block; width: 160px; height: auto; margin-bottom: 12px; }
+
 @media (max-width: 800px) {
   h1 { font-size: 36px; }
   .cards, .two-col { grid-template-columns: 1fr; }

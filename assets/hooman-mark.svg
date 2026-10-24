@@ -1,8 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 52" width="120" height="52" role="img" aria-label="Hooman Operations bridge mark">
-  <circle cx="26" cy="26" r="26" fill="#2B3D4F"/>
-  <path d="M14 31 Q26 41 38 31" fill="none" stroke="#FAF8F5" stroke-width="4" stroke-linecap="round"/>
-  <g transform="translate(68 0)">
-    <path d="M36.5 7.81 A21 21 0 1 1 15.5 7.81" fill="none" stroke="#2B3D4F" stroke-width="9"/>
-    <line x1="26" y1="3" x2="26" y2="14" stroke="#D4A554" stroke-width="5"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 112" role="img" aria-label="Hooman Operations mark">
+  <defs>
+    <mask id="face-smile">
+      <rect width="208" height="112" fill="#fff"/>
+      <path d="M26 68 Q53 92 80 68" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+    </mask>
+  </defs>
+  <circle cx="56" cy="56" r="56" fill="#2B3D4F" mask="url(#face-smile)"/>
+  <path d="M180.4 15.5 A49.5 49.5 0 1 1 123.6 15.5" fill="none" stroke="#2B3D4F" stroke-width="13"/>
+  <rect x="147.5" y="7" width="10" height="22" fill="#D4A554"/>
 </svg>
