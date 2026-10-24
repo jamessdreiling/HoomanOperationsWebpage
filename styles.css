@@ -177,5 +177,7 @@ input, textarea {
   .about-layout { grid-template-columns: 1fr; }
   .about-text, .about-photo { grid-column: 1; grid-row: auto; }
   .brand-lockup { width: 120px; }
+  .site-header { flex-wrap: wrap; row-gap: 16px; }
+  .nav { flex-wrap: wrap; gap: 12px 16px; justify-content: flex-end; }
   .about-photo { max-width: 360px; }
 }
