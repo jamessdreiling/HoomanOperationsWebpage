@@ -1,0 +1,169 @@
+/* Hooman Operations: brand tokens from the brand record */
+:root {
+  --ivory: #FAF8F5;
+  --slate-deep: #2B3D4F;
+  --slate-blue: #4A5E78;
+  --gold: #D4A554;
+  --orange: #E89A3B;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--slate-deep);
+  font-family: "Figtree", system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+img, svg { display: block; max-width: 100%; }
+
+a { color: var(--slate-deep); }
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid rgba(43, 61, 79, 0.12);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  text-decoration: none;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-name strong { font-size: 26px; font-weight: 800; }
+.brand-name span { font-size: 10px; font-weight: 700; letter-spacing: 3px; margin-top: 4px; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.nav a { text-decoration: none; font-weight: 700; }
+.nav a[aria-current="page"] { color: var(--slate-blue); text-decoration: underline; text-underline-offset: 6px; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.btn-primary { background: var(--orange); color: var(--slate-deep); }
+.btn-secondary { border-color: var(--slate-deep); color: var(--slate-deep); }
+
+.btn:focus-visible,
+.nav a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--slate-blue);
+  outline-offset: 3px;
+}
+
+/* Sections */
+section { padding: var(--space-6) 0; }
+
+h1, h2, h3 { line-height: 1.15; margin: 0 0 var(--space-3); }
+h1 { font-size: 48px; font-weight: 800; }
+h2 { font-size: 36px; font-weight: 700; }
+h3 { font-size: 22px; font-weight: 700; }
+
+p { margin: 0 0 var(--space-3); }
+
+.lede { font-size: 20px; line-height: 30px; color: var(--slate-blue); max-width: 680px; }
+
+.hero { padding: var(--space-6) 0 var(--space-5); }
+.hero .actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-4); }
+
+.band-gold { background: var(--gold); color: var(--slate-deep); }
+.band-slate { background: var(--slate-deep); color: var(--ivory); }
+.band-slate a { color: var(--ivory); }
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.card {
+  background: #FFFFFF;
+  border: 1px solid rgba(43, 61, 79, 0.12);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+}
+
+.card .price { font-size: 28px; font-weight: 800; margin-bottom: var(--space-2); }
+.card ul { padding-left: 20px; margin: 0 0 var(--space-3); }
+.card .btn { margin-top: auto; align-self: flex-start; }
+
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.stats { font-size: 36px; font-weight: 800; line-height: 1.25; margin: 0 0 var(--space-4); }
+
+.muted { color: var(--slate-blue); }
+
+/* Form */
+form { display: grid; gap: var(--space-3); max-width: 560px; }
+label { display: grid; gap: var(--space-1); font-weight: 700; }
+input, textarea {
+  font: inherit;
+  padding: 12px;
+  border: 1px solid var(--slate-blue);
+  border-radius: var(--radius-sm);
+  background: #FFFFFF;
+  color: var(--slate-deep);
+}
+
+/* Footer */
+.site-footer {
+  padding: var(--space-5) 0;
+  border-top: 1px solid rgba(43, 61, 79, 0.12);
+  font-size: 14px;
+  color: var(--slate-blue);
+}
+
+@media (max-width: 800px) {
+  h1 { font-size: 36px; }
+  .cards, .two-col { grid-template-columns: 1fr; }
+}
