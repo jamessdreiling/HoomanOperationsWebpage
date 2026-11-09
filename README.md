@@ -4,7 +4,7 @@ Plain HTML and CSS, no build step. Hosting: Cloudflare Pages, connected to a Git
 
 ## Files
 - index.html: homepage (copy as written on the current site, minus the Loocy section)
-- services.html: three tiers; Advanced+ left out
+- services.html: four tiers (Back Office Checkup, Fix One Workflow, Back Office Setup, Keep It Running)
 - about.html: copy as written on the current site
 - contact.html: form (needs an endpoint before launch)
 - styles.css: brand tokens from the brand record (Figtree, five colors, spacing, radii)
