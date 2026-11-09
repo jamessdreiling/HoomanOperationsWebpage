@@ -1,0 +1,10 @@
+{
+  // Must match the Worker name in Cloudflare exactly
+  "name": "hoomanoperationswebpage",
+  "compatibility_date": "2026-11-09",
+  "assets": {
+    "directory": "."
+  },
+  // Lets non-main branches build a Preview (npx wrangler preview)
+  "previews": {}
+}
