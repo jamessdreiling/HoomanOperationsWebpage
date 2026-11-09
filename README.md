@@ -13,9 +13,9 @@ Plain HTML and CSS, no build step. Hosting: Cloudflare Pages, connected to a Git
 ## Open items before launch
 1. Contact form endpoint: replace REPLACE_WITH_FORM_ENDPOINT in contact.html with a form service's address, or the form will fail.
 2. Case study: the homepage shows a "coming soon" line in place of the full case study.
-3. Claims on the homepage and services page (savings ranges, zero layoffs, 2.3 FTE) are as written. They need sources before launch.
+3. Claims on the homepage and About page (78 to 37 minutes per request, 53% faster, more than $820,000 a year saved, $2,900 invested) come from the NGOsource project. Keep documentation on hand to back them up before launch.
 4. About page copy is the current generic text. Needs your words.
-5. Services prices are shown without "Starting at" on the services page; the note under the cards says they are starting prices.
+5. Services prices: Back Office Checkup is a flat $500; the other tiers show "Starting at." The note under the cards also says they are starting prices and mentions the nonprofit discount (no amount given).
 6. Social links removed; add your own accounts if you want them.
 7. Mobile layout has only basic responsive rules. Not yet reviewed.
 8. Logo wordmark is live text in Figtree; the mark is the SVG in assets/.
